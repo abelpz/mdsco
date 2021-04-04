@@ -1,0 +1,1 @@
+const manifest = '../dist/imsmanifest.xml'

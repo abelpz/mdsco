@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Course Title</title>
+</head>
+<body>
+    <div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1>Course Title</h1>
+            <p>Course subtitle if any</p>
+        </section>
+
+        <section data-markdown="https://git.door43.org/unfoldingWord/en_ta/raw/branch/master/intro/ta-intro/01.md"
+         data-separator="(?:(\n\r?)+#)"
+         data-separator-vertical="(?:(?<=.{3,})(?:\.\s|\n\r?)|(?<=##+ *.+)(\n\r?)+)"
+         data-separator-notes="^Note:"
+         data-charset="urf-8">
+            <!--
+                Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+                For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+            -->
+        </section>
+
+        <section>
+            <h1>Slide 2</h1>
+            <p>Texto interno 2</p>
+        </section>
+        
+    </div>
+    </div>
+</body>
+</html>
