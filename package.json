@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sco" : "node ./src/scorm-generator.mjs"
+    "sco": "node ./src/scorm-generator.mjs"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "archiver": "^5.3.0",
     "fs-extra": "^9.1.0",
+    "jszip": "^3.6.0",
     "node-fetch": "^2.6.1",
     "reveal.js": "^4.1.0"
   }

@@ -1,6 +1,6 @@
-import './scorm_api_wrapper.js';
+import pipwerks from './scorm_api_wrapper.js';
 
-export let scorm  = pipwerks.scorm
+export let scorm  = pipwerks.SCORM
 export let lmsConnected = false
 
 function handleError(msg) {
@@ -31,10 +31,10 @@ export function initCourse() {
 
         //If the name was successfully retrieved...
         if (learnername) {
-
+            console.log(`the learner name is ${learnername}`)
             //...let's display the username in a page element named "learnername"
             let byeH2 = document.getElementById("bye-message"); //use the name in the form
-            let byeMessage = byeH2.innerText.replace(/you for/, match => `you ${learnername} for`);
+            let byeMessage = byeH2.innerText.replace(/you for/gm, match => `you ${learnername} for`);
             byeH2.innerHTML = byeMessage;
 
         }
